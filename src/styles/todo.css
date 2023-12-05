@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(0, 77, 166, 0.5);
+  width: 50vw;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  min-height: 80vh;
+  border-radius: 20px;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: "Rubik Bubbles";
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+}
+
+.create-task {
+  width: 80%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.create-task input {
+  height: 35px;
+  width: 80%;
+  padding: 0 10px;
+  color: rgba(0, 0, 0, 0.75);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  width: 80%;
+  margin: 50px 0;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.input-field {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 90%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.input-field.task-done {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.501);
+}
+
+input:focus {
+  outline: 2px solid rgb(0, 77, 166);
+  background-color: white;
+}
+
+.delete {
+  cursor: pointer;
+  background-color: rgba(249, 249, 249, 0.75);
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+  /* background-color: black; */
+  color: rgb(0, 77, 166);
+  border-radius: 5px;
+}
+
+.delete:hover {
+  background-color: rgb(0, 77, 166);
+  color: rgba(249, 249, 249, 0.75);
+}
+
+.add-task {
+  font-size: 2rem;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 50px 0;
+  background-color: rgba(249, 249, 249, 0.75);
+  color: rgb(0, 77, 166);
+}
+
+.add-task:hover {
+  background-color: rgb(0, 77, 166);
+  color: rgba(249, 249, 249, 0.75);
+}
